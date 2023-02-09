@@ -10,7 +10,7 @@ use GuzzleHttp\Exception\GuzzleException;
 class HttpGuzzleClient implements HttpHandler
 {
     public function __construct(
-        private readonly Client $client = new Client(['cookies' => true])
+        private readonly Client $client
     ) {
     }
 
