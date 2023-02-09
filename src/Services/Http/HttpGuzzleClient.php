@@ -27,6 +27,9 @@ class HttpGuzzleClient implements HttpHandler
         );
     }
 
+    /**
+     * @throws GuzzleException
+     */
     public function post(string $url, array $data): HttpResponse
     {
         $response = $this->client->post($url, [
